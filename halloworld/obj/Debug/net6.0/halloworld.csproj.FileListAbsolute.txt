@@ -1,0 +1,15 @@
+C:\Users\Terfa\source\repos\halloworld\halloworld\bin\Debug\net6.0\halloworld.exe
+C:\Users\Terfa\source\repos\halloworld\halloworld\bin\Debug\net6.0\halloworld.deps.json
+C:\Users\Terfa\source\repos\halloworld\halloworld\bin\Debug\net6.0\halloworld.runtimeconfig.json
+C:\Users\Terfa\source\repos\halloworld\halloworld\bin\Debug\net6.0\halloworld.dll
+C:\Users\Terfa\source\repos\halloworld\halloworld\bin\Debug\net6.0\halloworld.pdb
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.csproj.AssemblyReference.cache
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.AssemblyInfoInputs.cache
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.AssemblyInfo.cs
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.csproj.CoreCompileInputs.cache
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.dll
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\refint\halloworld.dll
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.pdb
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\halloworld.genruntimeconfig.cache
+C:\Users\Terfa\source\repos\halloworld\halloworld\obj\Debug\net6.0\ref\halloworld.dll
