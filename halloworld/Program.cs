@@ -12,12 +12,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book();
-            book1.title = "HAllow World";
-            book1.author = "terfa";
-            book1.pages = 300;
+            int sum1 = sum(1, 5);
 
-            Console.WriteLine(book1.title);
+            Console.WriteLine(sum1);
+        }
+
+        public static int sum(int number1, int number2) 
+        {
+         
+            return number1 + number2;
         }
     }
 }
