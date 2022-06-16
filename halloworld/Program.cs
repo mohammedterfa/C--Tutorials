@@ -1,8 +1,10 @@
-﻿using System;
+﻿using halloworld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace ConsoleApp1
 {
@@ -10,24 +12,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool isMale = true;
-            bool isTall = false;
-            
-            if (isMale && isTall)
-            {
-                Console.WriteLine("you are tall male");
-            }
-            else if (!isMale && isTall)
-            {
-                Console.WriteLine("you are tall not male");
-            }
+            Book book1 = new Book();
+            book1.title = "HAllow World";
+            book1.author = "terfa";
+            book1.pages = 300;
 
-            else if (isMale && !isTall) {
-                Console.WriteLine("you are short male");
-            }
-            else { 
-                Console.WriteLine("you are not tall not male then you are a woman");
-            }
+            Console.WriteLine(book1.title);
         }
     }
 }
