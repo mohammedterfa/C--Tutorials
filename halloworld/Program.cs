@@ -1,5 +1,4 @@
-﻿using halloworld;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,31 +12,23 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.Write("input first number : ");
-            int firstNumber = Convert.ToInt32(Console.ReadLine());
+            int firstnumber = Convert.ToInt32(Console.ReadLine());
+            Console.Write("input second number : ");
+            int secondnumber = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("input first number : ");
-            int secondNumber = Convert.ToInt32(Console.ReadLine());
+            if (firstnumber == secondnumber)
+            {
+                Console.WriteLine("first number equlas second number \n input thired number");
+                int thirdnumber = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("check if one is negative and one is positive : " +CheckNumber(firstNumber,secondNumber));
-
-
-
-
+                Console.WriteLine("The sum is : " + (firstnumber + secondnumber + thirdnumber));
+            }
+            else 
+            {
+                Console.WriteLine("the sum is : "+ (firstnumber+secondnumber));
+            }
         }
 
-        public static bool CheckNumber(int num1, int num2) {
-            if (num1 > 0 && num2 > 0)
-            {
-                return false;
-            }
-            else if (num1 < 0 && num2 < 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+        
         }        
     }
-}
