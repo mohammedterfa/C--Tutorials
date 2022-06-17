@@ -12,15 +12,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int sum1 = sum(1, 5);
+            string str;
 
-            Console.WriteLine(sum1);
-        }
+            Console.WriteLine("Input a string");
+            str = Console.ReadLine();
 
-        public static int sum(int number1, int number2) 
-        {
-         
-            return number1 + number2;
-        }
+            if (str.Length > 1)
+            {
+                var s = str.Substring(0,1);
+                Console.WriteLine(s+str+s);
+            }
+    
+
+        }     
     }
 }
