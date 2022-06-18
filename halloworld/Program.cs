@@ -11,9 +11,22 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string line = "UPPER CASE PLEASE CONVERT IT TI LOWER CASE";
+            string line = "Write a C# Sharp Program to display the following pattern using the alphabet.";
+            string[] words = line.Split( " " );
 
-            Console.WriteLine(line.ToLower());
+            string word = "";
+            int ctr = 0;
+
+            foreach (string s in words)
+            {
+                if (s.Length > ctr)
+                {
+                    word = s;
+                    ctr = s.Length;
+                }
+            }
+
+            Console.WriteLine(word);
         }
 
         
