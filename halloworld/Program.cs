@@ -11,24 +11,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("input first number : ");
-            int firstnumber = Convert.ToInt32(Console.ReadLine());
-            Console.Write("input second number : ");
-            int secondnumber = Convert.ToInt32(Console.ReadLine());
-
-            if (firstnumber == secondnumber)
-            {
-                Console.WriteLine("first number equlas second number \n input thired number");
-                int thirdnumber = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("The sum is : " + (firstnumber + secondnumber + thirdnumber));
-            }
-            else 
-            {
-                Console.WriteLine("the sum is : "+ (firstnumber+secondnumber));
-            }
+            Console.WriteLine(sumTriple(2, 2));
+            Console.WriteLine(sumTriple(12, 10));
+            Console.WriteLine(sumTriple(-5, 2));
         }
 
+        public static int sumTriple(int a, int b)
+        {
+            return a == b ? (a + b) * 3 : a + b;
+        }
         
-        }        
-    }
+    }        
+}
