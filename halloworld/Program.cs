@@ -11,17 +11,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("input a int : ");
-            int x  = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(result(x));
+            string line = "UPPER CASE PLEASE CONVERT IT TI LOWER CASE";
+
+            Console.WriteLine(line.ToLower());
         }
 
-        public static bool result(int n)
-        {
-            if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
-                return true;
-            return false;
-        }
+        
 
 
     }        
