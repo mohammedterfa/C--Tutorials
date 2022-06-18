@@ -11,22 +11,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(absoluteValue(2, 9));
-            Console.WriteLine(absoluteValue(10,9));
+            Console.WriteLine(checkSum(20,4));
+            Console.WriteLine(checkSum(10,10));
+            Console.WriteLine(checkSum(9,4));
         }
 
-        public static int absoluteValue(int a, int b)
+        public static int checkSum(int num1, int num2)
         {
-            if (a > b)
+            int sum = num1 + num2;
+            bool check;
+
+            if (sum == 20 || num1 == 20 || num2 == 20)
             {
-                return (a - b) * 2;
+                check = true;
+                Console.WriteLine(check);
+                return sum;
+
             }
 
             else {
-                return b - a;
+                check = false;
+                Console.WriteLine(check);
+
+                return sum;
+            
             }
+
         }
-             
+        
         
     }        
 }
