@@ -11,34 +11,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(checkSum(20,4));
-            Console.WriteLine(checkSum(10,10));
-            Console.WriteLine(checkSum(9,4));
+            Console.WriteLine("input a int : ");
+            int x  = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(result(x));
         }
 
-        public static int checkSum(int num1, int num2)
+        public static bool result(int n)
         {
-            int sum = num1 + num2;
-            bool check;
-
-            if (sum == 20 || num1 == 20 || num2 == 20)
-            {
-                check = true;
-                Console.WriteLine(check);
-                return sum;
-
-            }
-
-            else {
-                check = false;
-                Console.WriteLine(check);
-
-                return sum;
-            
-            }
-
+            if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
+                return true;
+            return false;
         }
-        
-        
+
+
     }        
 }
