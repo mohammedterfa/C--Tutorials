@@ -11,15 +11,22 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(sumTriple(2, 2));
-            Console.WriteLine(sumTriple(12, 10));
-            Console.WriteLine(sumTriple(-5, 2));
+            Console.WriteLine(absoluteValue(2, 9));
+            Console.WriteLine(absoluteValue(10,9));
         }
 
-        public static int sumTriple(int a, int b)
+        public static int absoluteValue(int a, int b)
         {
-            return a == b ? (a + b) * 3 : a + b;
+            if (a > b)
+            {
+                return (a - b) * 2;
+            }
+
+            else {
+                return b - a;
+            }
         }
+             
         
     }        
 }
