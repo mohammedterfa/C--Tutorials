@@ -11,13 +11,37 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("print odd number just");
+            long sum = 0;
+            int ctr = 0;
 
-            for (int n = 1; n < 100; n++) {
-                if (n % 2 != 0) {
-                    Console.WriteLine(n);
+            int n = 2;
+
+            while (ctr < 500)
+            {
+                if (isPrime(n))
+                {
+
+                    sum += n;
+                    ctr++;
                 }
+                n++;
             }
+
+            Console.WriteLine(sum);
+        }
+
+        public static bool isPrime(int n) {
+            int x = (int)Math.Floor(Math.Sqrt(n));
+
+            if (n == 1) return false;
+            if(n == 2) return true;
+
+            for (int i = 2; i <= x; i++){
+                if (n % i == 0) return false;
+            }
+
+            return true;
+        
         }
 
     }        
