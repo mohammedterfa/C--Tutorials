@@ -11,26 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string line = "Write a C# Sharp Program to display the following pattern using the alphabet.";
-            string[] words = line.Split( " " );
+            Console.WriteLine("print odd number just");
 
-            string word = "";
-            int ctr = 0;
-
-            foreach (string s in words)
-            {
-                if (s.Length > ctr)
-                {
-                    word = s;
-                    ctr = s.Length;
+            for (int n = 1; n < 100; n++) {
+                if (n % 2 != 0) {
+                    Console.WriteLine(n);
                 }
             }
-
-            Console.WriteLine(word);
         }
-
-        
-
 
     }        
 }
