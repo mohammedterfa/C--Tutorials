@@ -11,18 +11,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input an integer : ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            string line = "hallo world iam mohammed";
+            Console.WriteLine("the original :  " + line);
 
-            int sum = 0;
+            string result = "";
 
-            while (num != 0) {
-                sum += num % 10;
-                num /= 10;
+            List<string> list = new List<string>();
+
+            string[] words = line.Split(" ");
+
+            for (int i = words.Length - 1; i >= 0; i--)
+            {
+
+                result += words[i] + " ";
             }
 
-            Console.WriteLine(sum);
-        }
+            list.Add(result);
 
+            foreach (string s in list) {
+                Console.WriteLine("revers : " + s);
+            }
+        }        
     }        
 }
