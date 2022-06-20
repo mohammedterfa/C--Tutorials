@@ -11,13 +11,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string hexval = "4B0";
-            Console.WriteLine("hexadecima number : " + hexval);
+            int[] firstArray = { 1, 4, -5, 4 };
+            int[] secondArray = { 1, 8, -5, -8 };
 
-            int decValue = int.Parse(hexval, System.Globalization.NumberStyles.HexNumber);
+            Console.WriteLine("Array 1 : [{0}]", string.Join(", ", firstArray));
+            Console.WriteLine("Array 2 : [{0}]", string.Join(", ", secondArray));
 
-            Console.WriteLine("convert to ");
-            Console.WriteLine("decimal number : " + decValue);
+            Console.WriteLine("multiply arrays : ");
+
+            for (int i = 0; i < firstArray.Length; i++) {
+                Console.Write(firstArray[i] * secondArray[i] + " ");
+            }
+
+            
         }        
     }        
 }
