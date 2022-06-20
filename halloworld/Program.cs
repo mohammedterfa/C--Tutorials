@@ -11,9 +11,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            FileInfo f = new FileInfo("/home/abc.txt");
+            string hexval = "4B0";
+            Console.WriteLine("hexadecima number : " + hexval);
 
-            Console.WriteLine("file size is : " + f.Length);
+            int decValue = int.Parse(hexval, System.Globalization.NumberStyles.HexNumber);
+
+            Console.WriteLine("convert to ");
+            Console.WriteLine("decimal number : " + decValue);
         }        
     }        
 }
