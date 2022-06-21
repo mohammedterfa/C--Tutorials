@@ -11,18 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int[] firstArray = { 1, 4, -5, 4 };
-            int[] secondArray = { 1, 8, -5, -8 };
+            Console.Write("input a string : ");
+            string sen = Console.ReadLine();
 
-            Console.WriteLine("Array 1 : [{0}]", string.Join(", ", firstArray));
-            Console.WriteLine("Array 2 : [{0}]", string.Join(", ", secondArray));
+            int i = 0;
 
-            Console.WriteLine("multiply arrays : ");
-
-            for (int i = 0; i < firstArray.Length; i++) {
-                Console.Write(firstArray[i] * secondArray[i] + " ");
+            if (sen.Length > 4) { 
+                Console.WriteLine(sen.Length < 4 ? sen + sen + sen : sen.Substring(sen.Length - 4) + sen.Substring(sen.Length - 4) + sen.Substring(sen.Length - 4) + sen.Substring(sen.Length - 4));
             }
-
             
         }        
     }        
