@@ -11,18 +11,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("input interger > 100 : ");
+            Console.Write("input integer : ");
             int first = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("input integer < 200");
+            Console.Write("input integer : ");
             int second = Convert.ToInt32(Console.ReadLine());
 
             bool result;
-            if (first < 100 && second > 200)
+            if ((first >= -10 && first <= 10) || (second >= -10 && second <= 10))
             {
                 result = true;
             }
-            else { 
+            else {
                 result = false;
             }
 
