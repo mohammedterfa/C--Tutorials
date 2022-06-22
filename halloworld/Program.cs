@@ -11,15 +11,22 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("input a string : ");
-            string sen = Console.ReadLine();
+            Console.Write("input interger > 100 : ");
+            int first = Convert.ToInt32(Console.ReadLine());
 
-            int i = 0;
+            Console.Write("input integer < 200");
+            int second = Convert.ToInt32(Console.ReadLine());
 
-            if (sen.Length > 4) { 
-                Console.WriteLine(sen.Length < 4 ? sen + sen + sen : sen.Substring(sen.Length - 4) + sen.Substring(sen.Length - 4) + sen.Substring(sen.Length - 4) + sen.Substring(sen.Length - 4));
+            bool result;
+            if (first < 100 && second > 200)
+            {
+                result = true;
             }
-            
+            else { 
+                result = false;
+            }
+
+            Console.WriteLine(result);
         }        
     }        
 }
