@@ -11,22 +11,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("input integer : ");
-            int first = Convert.ToInt32(Console.ReadLine());
+            string str = "PHP Tutorial";
 
-            Console.Write("input integer : ");
-            int second = Convert.ToInt32(Console.ReadLine());
-
-            bool result;
-            if ((first >= -10 && first <= 10) || (second >= -10 && second <= 10))
-            {
-                result = true;
-            }
-            else {
-                result = false;
-            }
-
-            Console.WriteLine(result);
+            Console.WriteLine((str.Substring(1,2).Equals("HP") ? str.Remove(1,2) : str));
         }        
     }        
 }
