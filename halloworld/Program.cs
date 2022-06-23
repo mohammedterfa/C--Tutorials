@@ -12,14 +12,19 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            string str1 = "PHP Tutorial";
-            var result = "";
+            Console.WriteLine("input first intrger : ");
+            int x = Convert.ToInt32(Console.ReadLine());
 
-            if (str1.Length >= 1 && str1[0] == 'P')
-                result += str1[0];
-            if (str1.Length >= 2 && str1[1] == 'H')
-                result += str1[1];
-            Console.WriteLine(result);
+            Console.WriteLine("input second integer : ");
+            int y = Convert.ToInt32(Console.ReadLine());    
+
+            Console.WriteLine("input second integer : ");
+            int z = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("lagest integer : " + Math.Max(x, Math.Max(y, z)));
+            Console.WriteLine("minalues integer : " + Math.Min(x, Math.Min(y, z)));
+
+
         }
 
 
