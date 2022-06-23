@@ -11,20 +11,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("input first intrger : ");
+            Console.WriteLine("input integer : ");
             int x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("input second integer : ");
-            int y = Convert.ToInt32(Console.ReadLine());    
+            Console.WriteLine("input integer : ");
+            int y = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("input second integer : ");
-            int z = Convert.ToInt32(Console.ReadLine());
+            int n = 20;
+            int val1 = Math.Abs(x - n);
+            int val2 = Math.Abs(y - n);
 
-            Console.WriteLine("lagest integer : " + Math.Max(x, Math.Max(y, z)));
-            Console.WriteLine("minalues integer : " + Math.Min(x, Math.Min(y, z)));
-
-
+            Console.WriteLine(val1 == val2 ? 0 : (val1 < val2 ? x : y));
         }
 
 
