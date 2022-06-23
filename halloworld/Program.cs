@@ -11,17 +11,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("input integer : ");
-            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input a string : ");
 
-            Console.WriteLine("input integer : ");
-            int y = Convert.ToInt32(Console.ReadLine());
+            string str = Console.ReadLine();
 
-            int n = 20;
-            int val1 = Math.Abs(x - n);
-            int val2 = Math.Abs(y - n);
+            var count = str.Count(s => s == 'w');
 
-            Console.WriteLine(val1 == val2 ? 0 : (val1 < val2 ? x : y));
+            Console.WriteLine("Test the string contains 'w' character  between 1 and 3 times: ");
+
+            Console.WriteLine(count>=1 && count <=3);
         }
 
 
