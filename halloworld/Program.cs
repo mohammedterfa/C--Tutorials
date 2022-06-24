@@ -11,15 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("input a string : ");
+            Console.WriteLine("input string : ");
 
             string str = Console.ReadLine();
 
-            var count = str.Count(s => s == 'w');
-
-            Console.WriteLine("Test the string contains 'w' character  between 1 and 3 times: ");
-
-            Console.WriteLine(count>=1 && count <=3);
+            if (str.Length < 4)
+                Console.WriteLine(str.ToUpper());
+            else
+                Console.WriteLine(str.Substring(0, 4).ToLower() + str.Substring(4, str.Length - 4));
         }
 
 
