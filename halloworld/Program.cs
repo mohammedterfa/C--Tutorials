@@ -7,18 +7,25 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    struct w3struct {
+        public int x;
+        public int y;
+    }
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("input string : ");
+            Console.WriteLine("declariate a simple structure ");
+            Console.WriteLine("-------------------------------");
 
-            string str = Console.ReadLine();
+            w3struct w3 = new w3struct();
 
-            if (str.Length < 4)
-                Console.WriteLine(str.ToUpper());
-            else
-                Console.WriteLine(str.Substring(0, 4).ToLower() + str.Substring(4, str.Length - 4));
+            w3.x = 15;
+            w3.y = 25;
+
+            int sum = w3.x + w3.y;
+
+            Console.WriteLine("the sum of x and y is " + sum);
         }
 
 
